@@ -6,7 +6,17 @@ namespace GallowsGame
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+       
+            while (true)
+            {
+            GuessWord gw = new GuessWord();
+                gw.Hide();
+                gw.CheckLetter();
+                Console.WriteLine("Нажмите любую клавишу, чтобы начать сначала");
+            Console.ReadKey();
+            Console.Clear();
+
+            }
         }
     }
 }
