@@ -6,11 +6,11 @@ namespace GallowsGame
 {
 	class RandomWord
 	{
-		static Random random = new Random();
+		private static Random random = new Random();
 		public static string NewWord()
 		{
 			string word;
-			string patch = "WordsStockRus1.txt";
+			string patch = "WordsStockRus.txt";
 			using (StreamReader fs = new StreamReader(patch))
 			{
 				int count = File.ReadAllLines(patch).Length; // сколько слов в файле

@@ -6,4 +6,10 @@
     <NoWin32Manifest>true</NoWin32Manifest>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Update="Dictionary\WordsStockRus.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>

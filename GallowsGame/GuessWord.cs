@@ -23,8 +23,8 @@ namespace GallowsGame
             }
         }
 
-        int countАttempt = 6;
-        int count = 0;
+       private int countАttempt = 6;
+        private int count = 0;
         //Проверка наличия буквы
         public void CheckLetter()
         {
@@ -57,8 +57,8 @@ namespace GallowsGame
             if(countАttempt == 0)
             Console.WriteLine($"Увы, вы проиграли:(\n слово: {word}");
         }
-            //считываем слово 
-            char inputLetter()
+        //считываем слово 
+        private char inputLetter()
             {
                 try
                 {
@@ -79,8 +79,8 @@ namespace GallowsGame
 
             }
 
-            //проверка есть ли такая буква 
-            int haveChar(char input)
+        //проверка есть ли такая буква 
+        private int haveChar(char input)
             {
                 for (int i = 0; i < word.Length; i++)
                 {
@@ -94,8 +94,8 @@ namespace GallowsGame
                 return count;
             }
 
-            //проверяем не угадали ли слово
-            bool nextCheck()
+        //проверяем не угадали ли слово
+        private bool nextCheck()
             {
                 for (int i = 0; i < word.Length; i++)
                 {
@@ -106,8 +106,8 @@ namespace GallowsGame
                 }
                 return false;
             }
-            //Отображение текущей позиции отгадывания
-            string showNowWord()
+        //Отображение текущей позиции отгадывания
+        private string showNowWord()
             {
                 string nowWord = null;
                 for (int i = 0; i < word.Length; i++)
@@ -116,7 +116,7 @@ namespace GallowsGame
                 }
                 return nowWord;
             }
-        void usedLetter() //Выводим буквы, которые исползовали
+        private void usedLetter() //Выводим буквы, которые исползовали
         {
             string used = null;
             for (int i = 0; i < used_Letter.Count; i++)
@@ -126,7 +126,7 @@ namespace GallowsGame
             Console.WriteLine($" Использованные буквы: {used}");
         }
         //Проверяем буквы которые уже были
-        bool usedItLetter(char inputChar)
+        private bool usedItLetter(char inputChar)
         {
             for (int i = 0; i < used_Letter.Count; i++)
             {
